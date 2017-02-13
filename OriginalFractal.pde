@@ -1,16 +1,20 @@
+public int colorR = color(0);
+public int colorG = color(0);
+public int colorB = color(0);
 public void setup()
 {
-	size (600, 600);
+	size (500, 500);
 
 }
 
 public void draw()
 {
-	circle(300, 300, 800);
+	circle(250, 250, 800);
 }
 
 public void circle(int x, int y, int rad)
 {
+	stroke(0,200,200);
 	ellipse(x, y, rad, rad);
 	if (rad <=20)
 		{noLoop();}
